@@ -32,20 +32,22 @@ console.log('working');
 
 
 
-function calc() {
-  var num1 = prompt(`First Number`);
-  var num2 = prompt(`Second Number`);
+
+  var number1 = prompt(`First Number`);
+  var number2 = prompt(`Second Number`);
   var choice = prompt(`+, -, *, /`);
-} if (choice === '+') {
+function calc(num1, num2, choice) {
+  if (choice === "+") {
   return Number(num1) + Number(num2);
-} if (choice === '-') {
+} if (choice === "-") {
   return Number(num1) - Number(num2);
-} if (choice === '*') {
-  return Number(num1) + Number(num2);
-} if (choice === '/') {
+} if (choice === "*") {
+  return Number(num1) * Number(num2);
+} if (choice === "/") {
   return Number(num1) / Number(num2);
 } 
-console.log( calc());
+}
+console.log( calc(number1, number2, choice));
 
 
 
